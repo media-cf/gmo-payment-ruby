@@ -255,7 +255,7 @@ module GMO
       end
 
       # 取引登録
-      def entry_tran_ganb
+      def entry_tran_ganb(options = {})
         name = "EntryTranGANB.idPass"
         required = [:order_id, :amount]
         assert_required_options(required, options)
@@ -263,7 +263,7 @@ module GMO
       end
 
       # 取引実行
-      def exec_tran_ganb
+      def exec_tran_ganb(options = {})
         name = "ExecTranGANB.idPass"
         required = [:access_id, :access_pass, :order_id]
         assert_required_options(required, options)
