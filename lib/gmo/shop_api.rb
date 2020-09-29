@@ -270,6 +270,14 @@ module GMO
         post_request name, options
       end
 
+      # 取引停止
+      def cancel_tran_ganb(options = {})
+        name = "CancelTranGANB.idPass"
+        required = [:access_id, :access_pass, :order_id]
+        assert_required_options(required, options)
+        post_request name, options
+      end
+
       ## 2.14.2.1.決済変更
       # 仮売上の決済に対して実売上を行います。尚、実行時に仮売上時との金額チェックを行います。
       # /payment/AlterTran.idPass
