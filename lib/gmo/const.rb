@@ -1,6 +1,6 @@
 module GMO
   module Const
-    DEFAULT_LOCALE = :en
+    DEFAULT_LOCALE = :ja
 
     ACCOUNT_TYPES_MAP = {
       :normal  => 1,
